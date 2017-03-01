@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="448.0" prefWidth="354.0" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalpro.LoginSeprateController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="448.0" layoutX="-1.0" layoutY="2.0" strokeType="INSIDE" width="354.0">
+         <fill>
+            <LinearGradient endY="1.0" startX="1.0" startY="0.4285714285714286">
+               <stops>
+                  <Stop color="#6f6969" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endY="1.0" startX="1.0" startY="0.5476190476190477">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Rectangle>
+      <Group layoutX="-2.0" layoutY="37.0">
+         <children>
+            <Label layoutX="84.0" layoutY="14.0" text="DOCSYS Login" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="profile" fitHeight="120.0" fitWidth="171.0" layoutX="97.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../users_image/Hydrangeas.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="73.0" layoutY="318.0" mnemonicParsing="false" onAction="#onLoginBtn_Clicked" prefHeight="26.0" prefWidth="232.0" text="Log in" />
+            <Label fx:id="labelname" alignment="CENTER" layoutX="96.0" layoutY="205.0" prefHeight="27.0" prefWidth="163.0" text="Name" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="73.0" layoutY="259.0" prefHeight="32.0" prefWidth="232.0" />
+            <Label fx:id="err" alignment="CENTER" layoutX="82.0" layoutY="296.0" prefHeight="17.0" prefWidth="210.0" text="Password Incorrect" textFill="RED" visible="false" />
+         </children>
+      </Group>
+      <Label layoutX="84.0" layoutY="414.0" onMouseClicked="#onRevert" prefHeight="20.0" prefWidth="207.0" text="Sign in with different Account">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

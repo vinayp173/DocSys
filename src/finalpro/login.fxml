@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="364.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalpro.LoginController">
+   <children>
+      <GridPane layoutX="-14.0" prefHeight="325.0" prefWidth="409.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane fx:id="p1" onMouseClicked="#imag1" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <ImageView fx:id="IV1" fitHeight="70.0" fitWidth="78.0" layoutX="25.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="l1" layoutX="120.0" layoutY="41.0" prefHeight="28.0" prefWidth="50.0" text="Vinay" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="p2" onMouseClicked="#imag2" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fx:id="IV2" fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="l2" layoutX="102.0" layoutY="37.0" prefHeight="28.0" prefWidth="50.0" text="Vinay" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="p3" onMouseClicked="#imag3" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="IV3" fitHeight="70.0" fitWidth="78.0" layoutX="25.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="l3" layoutX="120.0" layoutY="40.0" prefHeight="28.0" prefWidth="50.0" text="Vinay" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="p4" onMouseClicked="#imag4" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="IV4" fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="l4" layoutX="102.0" layoutY="40.0" prefHeight="28.0" prefWidth="50.0" text="Vinay" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="p5" onMouseClicked="#imag5" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fx:id="IV5" fitHeight="70.0" fitWidth="78.0" layoutX="25.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="l5" layoutX="120.0" layoutY="41.0" prefHeight="28.0" prefWidth="50.0" text="Vinay" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="p6" onMouseClicked="#imag6" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fx:id="IV6" fitHeight="70.0" fitWidth="78.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="l6" layoutX="102.0" layoutY="41.0" prefHeight="28.0" prefWidth="50.0" text="Vinay" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Label fx:id="ladd" alignment="CENTER" layoutX="-17.0" layoutY="350.0" prefHeight="31.0" prefWidth="195.0" text="Add Account" textAlignment="CENTER" textFill="WHITE" visible="false" />
+      <Label fx:id="lremove" alignment="CENTER" layoutX="179.0" layoutY="350.0" prefHeight="31.0" prefWidth="185.0" text="Remove" textFill="WHITE" visible="false" />
+   </children>
+</Pane>
